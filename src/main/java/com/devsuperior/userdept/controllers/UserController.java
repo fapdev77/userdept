@@ -36,7 +36,8 @@ public class UserController {
 		return result;
 	}
 	
-	//Inserir um novo registro no banco de dados utilizamos a anotação @PostMapping juntamente com o @RequestBody (onde pega os dados para salvar)
+	//Inserir um novo registro no banco de dados utilizamos a anotação @PostMapping 
+	//juntamente com o @RequestBody (onde pega os dados para salvar)
 	@PostMapping
 	public User insert(@RequestBody User user) {
 		User result = repository.save(user);
